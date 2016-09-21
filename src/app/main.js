@@ -23,7 +23,7 @@ export class Main extends Component {
               <h2>Una solución educativa</h2>
               <div className="info-action">
                 <p>para atender y resolver las necesidades<br />de los colegios</p>
-                <a>Solicita más información</a>
+                <a href="#">Solicita más información</a>
               </div>
             </div>
           </div>
