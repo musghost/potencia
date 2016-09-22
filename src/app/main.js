@@ -13,6 +13,10 @@ export class Main extends Component {
           <div className="potencia">
             <img src="assets/potencia.png" />
           </div>
+          <video autoPlay loop className="video">
+            <source src="http://ak9.picdn.net/shutterstock/videos/4944299/preview/stock-footage-superhero-boy-runs-around-park-pretending-to-fly.mp4" type='video/mp4' / >
+            <source src="http://ak9.picdn.net/shutterstock/videos/4944299/preview/stock-footage-superhero-boy-runs-around-park-pretending-to-fly.webm" type='video/webm' />
+          </video>
         </div>
         <div className="container">
           <div className="get-info clearfix">
