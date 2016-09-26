@@ -581,6 +581,11 @@ header {
     img {
       max-width: 100%;
     }
+
+    ul {
+      display: inline-block;
+      text-align: left;
+    }
   }
 }
 

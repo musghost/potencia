@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Header} from './header';
 import {Title} from './title';
-import {Techs} from './techs/techs';
+import {Development} from './development';
 import {Footer} from './footer';
 import ScrollReveal from 'scrollreveal';
 
@@ -202,25 +202,7 @@ export class Main extends Component {
             </div>
           </div>
         </div>
-        <div className="development">
-          <div className="development-header">
-            <h1>Desarrollo profesional</h1>
-            <div className="container">
-              <div className="tabs">
-                <a href="#" className="active">Certificaciones</a>
-                <a href="#">Programa de acompañamiento</a>
-                <a href="#">Evaluación</a>
-                <a href="#">Red Potencia</a>
-              </div>
-            </div>
-          </div>
-          <div className="tabs-body">
-            <div className="container">
-              <p>Establecimos alianzas estratégicas para brindar a los educadores oportunidades de desarrollo profesional a través de procesos de formación, evaluación y certificación acreditados a nivel nacional por el CONOCER, y tienen reconocimiento internacional por Club UNESCO y Google Educación.</p>
-              <img src="assets/images/items.png" />
-            </div>
-          </div>
-        </div>
+        <Development />
         <div className="logos">
           <h1>
             <img src="assets/images/logos/edilar.png" />
