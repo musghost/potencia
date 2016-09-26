@@ -52,7 +52,6 @@ html, body, #root {
     display: inline-block;
 
     &:last-child {
-      margin-left: 85px;
 
       a {
         padding-right: 0;
@@ -258,6 +257,10 @@ header {
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 }
 
@@ -499,6 +502,12 @@ header {
       p {
         font-size: 1em;
         font-weight: 300;
+      }
+
+      sub {
+        font-size: 12px;
+        display: block;
+        font-style: italic;
       }
     }
   }

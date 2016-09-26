@@ -92,8 +92,8 @@ export class Main extends Component {
             <img src="assets/potencia.png" className="potencia-image" />
           </div>
           <video autoPlay loop className="video">
-            <source src="http://ak9.picdn.net/shutterstock/videos/4944299/preview/stock-footage-superhero-boy-runs-around-park-pretending-to-fly.mp4" type='video/mp4' / >
-            <source src="http://ak9.picdn.net/shutterstock/videos/4944299/preview/stock-footage-superhero-boy-runs-around-park-pretending-to-fly.webm" type='video/webm' />
+            <source src="assets/video/output.mp4" type='video/mp4' / >
+            <source src="assets/video/output.webm" type='video/webm' />
           </video>
         </div>
         <div className="container">
@@ -112,7 +112,7 @@ export class Main extends Component {
         </div>
         <div className="solutions clearfix">
           <div className="container">
-            <h1>Potencia es una solución educativa<br />con 3 componentes</h1>
+            <h1>Una solución educativa global con tres componentes,<br />para atender las necesidades de los colegios de educación básica</h1>
             <div className="components">
               <div className="component">
                 <img src="assets/images/component1.jpg" className="component-img" />
@@ -136,22 +136,22 @@ export class Main extends Component {
           </div>
         </div>
         <div className="tecnology">
-          <h1>Actores en la tecnología</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br />ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <h1>Actores en Potencia</h1>
+          <p>En Potencia entendemos a todos los actores de la comunidad educativa y hoy la tecnología<br />nos permite usar herramientas para cada uno de ellos que potencialice su experiencia y el resultado en el aprendizaje de los niños. </p>
           <div className="container">
             <div className="players">
               <div className="player">
-                <div><img src="assets/images/item1.png" className="players-img" /></div>
+                <div><img src="assets/images/item4.png" className="players-img" /></div>
                 <div>
-                  <h2>Maestro</h2>
-                  <p>En Potencia, empoderamos al docente con herramientas de contenido, metodología, alianzas clave y equipamiento para el uso estratégico de la tecnología para crear experiencias de aprendizaje.</p>
+                  <h2>Estudiante</h2>
+                  <p>Le ofrecemos la mejor experiencia de trabajo por medio de carpetas vinculadas a nuestra plataforma digital, especialmente diseñada para potenciar su experiencia de aprendizaje en el aula y fuera de ella.</p>
                 </div>
               </div>
               <div className="player">
-                <div><img src="assets/images/item2.png" className="players-img" /></div>
+                <div><img src="assets/images/item1.png" className="players-img" /></div>
                 <div>
-                  <h2>Padres</h2>
-                  <p>Hoy las tecnologías de la información (app para padres) hacen posible que la comunicación fluya adecuadamente entre las escuelas y las familias de los estudiantes.</p>
+                  <h2>Docente</h2>
+                  <p>Lo empoderamos para que use la tecnología de forma estratégica con el fin de favorecer su experiencia de enseñanza-aprendizaje, con herramientas, contenido, metodología, alianzas clave y equipamiento.</p>
                 </div>
               </div>
             </div>
@@ -160,14 +160,14 @@ export class Main extends Component {
                 <div><img src="assets/images/item3.png" className="players-img" /></div>
                 <div>
                   <h2>Aula</h2>
-                  <p>Entendemos los retos que implica utilizar tecnología de forma eficaz dentro del aula, Potencia proveerá de el hardware y las aplicaciones para que podamos hacer con estas.</p>
+                  <p>La equipamos con hardware para potenciar el ambiente de aprendizaje y el desempeño de docentes y estudiantes.</p>
                 </div>
               </div>
               <div className="player">
-                <div><img src="assets/images/item4.png" className="players-img" /></div>
+                <div><img src="assets/images/item2.png" className="players-img" /></div>
                 <div>
-                  <h2>Alumnos</h2>
-                  <p>Nuestros alumnos tendrán acceso en casa a una plataforma especialmente diseñada para Potencializar la experiencia de enseñanza - aprendizaje que les permita colaborar y.</p>
+                  <h2>Familia</h2>
+                  <p>Le comunicamos el desempeño de los estudiantes mediante nuestro sistema digital (app), lo que hace posible que la información fluya oportunamente entre el colegio, el estudiante y la familia.</p>
                 </div>
               </div>
             </div>
@@ -175,28 +175,28 @@ export class Main extends Component {
         </div>
         <div className="proposals">
           <h1>Propuesta pedagógica</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br />ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <p>Potencia educativa redefine el pensamiento de diseño, <i>Design Thinking</i>, mediante procesos<br />de observación y empatía, de comunicación, colaboración y creación, y engloba conocimientos y habilidades de manera natural y efectiva.</p>
           <div className="container">
             <div className="proposals-list">
               <div className="proposal">
                 <div><img src="assets/images/proposal1.png" className="props-img" /></div>
                 <div className="description">
                   <h2>Programa SEP</h2>
-                  <p>Potencia atiende las necesidades educativas del país, por eso integramos el</p>
+                  <p>Atendemos el currículo oficial de primaria y secundaria.</p>
                 </div>
               </div>
               <div className="proposal">
                 <div><img src="assets/images/proposal2.png" className="props-img" /></div>
                 <div className="description">
-                  <h2>21ts Century Skills</h2>
-                  <p>El futuro nos presenta nuevas oportunidades que la niñez del mundo</p>
+                  <h2>Habilidades del siglo XXI<sub>21st Century Skills</sub></h2>
+                  <p>Potenciamos el pensamiento crítico, el manejo de medios digitales y la creatividad para enfrentar los retos de su tiempo.</p>
                 </div>
               </div>
               <div className="proposal">
                 <div><img src="assets/images/proposal3.png" className="props-img" /></div>
                 <div className="description">
-                  <h2>Design Thinking</h2>
-                  <p>Nuestra propuesta reelabora el pensamiento de diseño mediante procesos de</p>
+                  <h2>Pensamiento de diseño<sub>Design Thinking</sub></h2>
+                  <p>Proponemos una técnica de trabajo en el aula, y fuera de ella, que abre posibilidades de innovación en el aprendizaje.</p>
                 </div>
               </div>
             </div>
@@ -210,13 +210,13 @@ export class Main extends Component {
                 <a href="#" className="active">Certificaciones</a>
                 <a href="#">Programa de acompañamiento</a>
                 <a href="#">Evaluación</a>
-                <a href="#">Título 4</a>
+                <a href="#">Red Potencia</a>
               </div>
             </div>
           </div>
           <div className="tabs-body">
             <div className="container">
-              <p>Establecimos alianzas estratégicas para ofrecer a profesionales de la educación oportunidades de desarrollo profesional a través de procesos de formación, evaluación y certificación que están acreditados a nivel nacional por el CONOCER, y tienen reconocimiento internacional por Club UNESCO y Google Educación.</p>
+              <p>Establecimos alianzas estratégicas para brindar a los educadores oportunidades de desarrollo profesional a través de procesos de formación, evaluación y certificación acreditados a nivel nacional por el CONOCER, y tienen reconocimiento internacional por Club UNESCO y Google Educación.</p>
               <img src="assets/images/items.png" />
             </div>
           </div>

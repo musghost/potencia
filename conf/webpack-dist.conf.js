@@ -9,13 +9,6 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   module: {
-    preLoaders: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'eslint'
-      }
-    ],
 
     loaders: [
       {
@@ -30,6 +23,18 @@ module.exports = {
           fallbackLoader: 'style',
           loader: 'css?minimize!sass!postcss'
         })
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg|woff)$/,
+        loader: 'url-loader?limit=10000',
+      },
+      {
+        test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url-loader',
+      },
+      {
+        test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
+        loader: 'file-loader',
       },
       {
         test: /\.js$/,
@@ -60,8 +65,8 @@ module.exports = {
     path: path.join(process.cwd(), conf.paths.dist),
     filename: '[name]-[hash].js'
   },
-  entry: {
-    app: `./${conf.path.src('index')}`,
-    vendor: Object.keys(pkg.dependencies)
-  }
+  entry: [
+    'font-awesome-loader',
+    `./${conf.path.src('index')}`
+  ]
 };
