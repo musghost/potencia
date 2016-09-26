@@ -8,12 +8,13 @@ export class Footer extends Component {
           <div className="footer-wrapper">
             <div>
               <h3>Contacto</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+              <p>En Potencia queremos saber más de tus necesidades educativas y también nosotros poder presentarte nuestros programas.</p>
+              <p>Por favor ponte en contacto con nosotros para que podamos agendar una vista.</p>
               <p>+52 (55) 3547 0082</p>
             </div>
             <div></div>
             <div>
-              <h3>Envía un mensaje</h3>
+              <h3>Estamos a tus ordenes</h3>
               <div className="form">
                 <input type="text" placeholder="Escribe tu nombre*" />
                 <input type="email" placeholder="Escribe tu email*" />
