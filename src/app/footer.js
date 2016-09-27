@@ -14,7 +14,7 @@ export class Footer extends Component {
             </div>
             <div></div>
             <div>
-              <h3>Estamos a tus ordenes</h3>
+              <h3>Estamos a tus órdenes</h3>
               <div className="form">
                 <input type="text" placeholder="Escribe tu nombre*" />
                 <input type="email" placeholder="Escribe tu email*" />
