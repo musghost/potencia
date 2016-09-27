@@ -5,6 +5,7 @@ import {Development} from './development';
 import {Logos} from './logos';
 import {Footer} from './footer';
 import ScrollReveal from 'scrollreveal';
+import {SendMessage} from './modals/send-message';
 
 const videos = ['output', 'output-2'];
 
@@ -14,8 +15,17 @@ export class Main extends Component {
     super(props);
 
     this.state = {
-      loaded: false
+      loaded: false,
+      modalIsOpen: false
     };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(event) {
+    if(typeof event !== 'undefined') {
+      event.preventDefault();
+    }
+    this.setState({modalIsOpen: !this.state.modalIsOpen});
   }
 
   getRandomInt(min, max) {
@@ -58,7 +68,7 @@ export class Main extends Component {
               <h2>Una solución educativa</h2>
               <div className="info-action">
                 <p>para atender y resolver las necesidades<br />de los colegios</p>
-                <a href="#">Solicita más información</a>
+                <a href="#" onClick={this.handleClick}>Solicita más información</a>
               </div>
             </div>
           </div>
@@ -177,6 +187,7 @@ export class Main extends Component {
           </div>
         </div>
         <Footer />
+        <SendMessage isOpen={this.state.modalIsOpen} handleClick={this.handleClick} />
       </div>
     );
   }

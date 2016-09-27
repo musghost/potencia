@@ -9,8 +9,7 @@ export class SendMessage extends Component {
         <ModalBody>
           <div className="message">
             <h2 className="title">Envía un mensaje</h2>
-            <p>Conoce cómo puedes implementar Potencia en tu escuela.</p>
-            <p>¡Escríbenos!</p>
+            <p>Déjanos conocerte y mostrarte qué es lo que <strong>Potencia</strong> puede hacer por ti.</p>
           </div>
           <div>
             <input type="text" placeholder="Escribe tu nombre" />
@@ -22,7 +21,7 @@ export class SendMessage extends Component {
             <input type="text" placeholder="Escribe tu teléfono" />
           </div>
           <div>
-            <input type="text" placeholder="Escribe tu colegio" />
+            <input type="text" placeholder="¿Cuál es tu colegio?" />
           </div>
           <div>
             <textarea placeholder="Escribe tu mensaje"></textarea>
