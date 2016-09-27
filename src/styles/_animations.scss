@@ -49,3 +49,43 @@
     transform: translateX(-1px) rotate(0);
   }
 }
+
+@keyframes modalDialogLeave {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+  }
+}
+
+@keyframes modalBackdropEnter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalBackdropLeave {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes modalDialogEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

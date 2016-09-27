@@ -1,5 +1,6 @@
 @import 'styles/animations';
 @import 'styles/mixins';
+@import 'styles/modal';
 
 html, body, #root {
   margin: 0;
@@ -9,6 +10,21 @@ html, body, #root {
 
 * {
   box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: inherit;
+}
+a, .a {
+  color: inherit;
+}
+a:hover, .a:hover, a:focus, .a:focus {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.title {
+  @include custom-border;
 }
 
 .clearfix {
@@ -113,6 +129,7 @@ nav {
     font-size: 13px;
     line-height: 1.3em;
     transition: all 0.4s ease;
+    color: #fff;
     
     &:after {
       left: 0;
@@ -127,6 +144,8 @@ nav {
     }
 
     &:hover {
+      color: #fff;
+
       &:after {
         opacity: 1;
         left: 32px;
@@ -632,6 +651,7 @@ header {
       margin-top: 0;
       margin-bottom: 10px;
       font-weight: 300;
+      color: #fff;
     }
 
     p {
@@ -826,21 +846,6 @@ footer {
     }
   }
 
-  input,
-  textarea {
-    border: 1px solid #fff;
-    background: none;
-    width: 100%;
-    padding: 12px 10px;
-    margin-bottom: 20px;
-  }
-
-  textarea {
-    margin-top: 40px;
-    margin-bottom: 0;
-    height: 160px;
-  }
-
   button {
     border: 2px solid #3f9fd4;
     width: 50%;
@@ -854,6 +859,11 @@ footer {
     &:hover {
       background: #3f9fd4;
     }
+  }
+
+  textarea {
+    margin-top: 40px;
+    margin-bottom: 0;
   }
 
   .form {
@@ -879,6 +889,25 @@ footer {
       }
     }
   }
+}
+
+input,
+textarea {
+  border: 1px solid #fff;
+  background: none;
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 20px;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  &:focus {
+    border-color: #1385e5;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 3px rgba(19, 133, 229, 0.1);
+    outline: 0;
+  }
+}
+
+textarea {
+  height: 160px;
 }
 
 .container {

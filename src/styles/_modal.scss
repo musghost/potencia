@@ -1,0 +1,197 @@
+.Modal {
+  transition: visibility 140ms;
+  bottom: 0;
+  left: 0;
+  outline: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  z-index: 110;
+  -webkit-overflow-scrolling: touch;
+}
+.Modal.is-open {
+  transition: none;
+  visibility: visible;
+}
+.Modal-dialog {
+  max-width: 100%;
+  padding: 10px;
+  position: relative;
+  width: auto;
+  z-index: 2;
+}
+.Modal-dialog-enter {
+  animation-name: modalDialogEnter;
+  animation-duration: 260ms;
+  animation-timing-function: cubic-bezier(0.5, -0.55, 0.4, 1.55);
+}
+.Modal-dialog-leave {
+  animation-duration: 140ms;
+  animation-name: modalDialogLeave;
+}
+.Modal-content {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.175), 0 3px 8px rgba(0, 0, 0, 0.175);
+  outline: none;
+  position: relative;
+  background: {
+    image: url(assets/images/modal-background.png);
+    color: white;
+    repeat: no-repeat;
+    position: left top;
+  }
+  &:before {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(-1, -1);
+    content: '';
+    position: absolute;
+    background: {
+      image: url(assets/images/modal-background.png);
+      repeat: no-repeat;
+      position: -100px 0;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .Modal-dialog {
+    margin: 80px auto;
+  }
+  .Modal-dialog--small {
+    width: 428px;
+  }
+  .Modal-dialog--medium {
+    width: 640px;
+  }
+  .Modal-dialog--large {
+    width: 960px;
+  }
+}
+.Modal__header,
+.Modal__body,
+.Modal__footer {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
+}
+.Modal__header {
+  /*box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);*/
+  z-index: 1;
+}
+.Modal__header__text {
+  color: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+}
+.Modal__header__close {
+  transition: opacity 140ms;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1ex;
+  margin: 0;
+  opacity: .4;
+  font-size: 24px;
+  padding: 20px 20px;
+  position: absolute;
+  right: -20px;
+  top: 0;
+}
+.Modal__header__close::after {
+  content: "\00d7";
+}
+.Modal__header__close:hover,
+.Modal__header__close:focus {
+  opacity: 1;
+  outline: 0;
+}
+.Modal__header__close:active {
+  color: #d64242;
+}
+.Modal__body {
+  margin: 0;
+  padding: 20px 20px;
+}
+.Modal__footer {
+  /*box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.05);*/
+  z-index: 1;
+  text-align: center;
+}
+.Modal-backdrop {
+  animation-duration: 140ms;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 109;
+}
+.Modal-background-enter {
+  animation-name: modalBackdropEnter;
+}
+.Modal-background-leave {
+  animation-duration: 240ms;
+  animation-name: modalBackdropLeave;
+}
+
+.Modal {
+
+  .message {
+    margin-bottom: 35px;
+  }
+
+  textarea, input {
+    border-color: #bdbdbd;
+    font-size: 14px;
+  }
+  ::-webkit-input-placeholder {
+    color: #000;
+    font-weight: 400;
+    font-family: sans-serif;
+    font-style: italic;
+  }
+  :-webkit-input-placeholder {
+    color: #000;
+    font-weight: 400;
+    font-family: sans-serif;
+    font-style: italic;
+  }
+
+  .title {
+    margin-bottom: 50px;
+    margin-top: 0;
+    &:after {
+      bottom: -15px;
+    }
+  }
+
+  p {
+    font-size: 0.86em;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 0;
+  }
+
+  button.primary {
+    width: 130px;
+    background: #3f9fd4;
+    color: #fff;
+    border: 0;
+    display: inline-block;
+    padding: 18px 0;
+    border-radius: 0.35em;
+    font-weight: 100;
+    font-size: 0.89em;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 2px 2px 1px #a7a7a7;
+  }
+}
