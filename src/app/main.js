@@ -35,7 +35,6 @@ export class Main extends Component {
 
   render() {
     const index = this.getRandomInt(0, 2);
-    console.log(index);
     const videoMp4 = `assets/video/${videos[index]}.mp4`;
     const videoWebm = `assets/video/${videos[index]}.webm`;
     return (

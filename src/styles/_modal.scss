@@ -1,3 +1,10 @@
+@mixin modal-placeholder {
+  color: #000;
+  font-weight: 400;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
 .Modal {
   transition: visibility 140ms;
   bottom: 0;
@@ -152,18 +159,23 @@
   textarea, input {
     border-color: #bdbdbd;
     font-size: 14px;
-  }
-  ::-webkit-input-placeholder {
-    color: #000;
-    font-weight: 400;
-    font-family: sans-serif;
-    font-style: italic;
-  }
-  :-webkit-input-placeholder {
-    color: #000;
-    font-weight: 400;
-    font-family: sans-serif;
-    font-style: italic;
+
+    &::-webkit-input-placeholder {
+      @include modal-placeholder;
+    }
+    &::-moz-placeholder {
+      @include modal-placeholder;
+    }
+    &:-ms-input-placeholder {
+      @include modal-placeholder;
+    }
+    &:-moz-placeholder {
+      @include modal-placeholder;
+    }
+
+    &[placeholder] {
+      @include modal-placeholder;
+    }
   }
 
   .title {
