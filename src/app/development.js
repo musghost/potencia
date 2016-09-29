@@ -16,6 +16,7 @@ const tabs = [
       <div>
         <p>Sabemos que las mejores prácticas en el uso de tecnología para el aprendizaje, valoran y respetan los saberes de cada maestro sin imponer otros, tienen claridad en el propósito didáctico de los recursos, integran estratégicamente tecnología añadiendo  innovación pedagógica a las prácticas preexistentes.</p>
         <p>Es por eso que nuestro Programa de Acompañamiento se realiza con didactas especialistas por área en el uso de tecnología, mediante varias etapas, en formato híbrido.</p>
+        <div><img src="assets/images/esquema.png" /></div>
       </div>
     )
   },
@@ -40,9 +41,14 @@ const tabs = [
   {
     name: 'Red Potencia',
     content: (
-      <div>
-        <p>La Red Potencia impulsa el análisis de experiencias de aprendizaje exitosas centradas en los alumnos y propicia el trabajo colaborativo entre docentes para enriquecer su formación permanente mediante una comunidad en red..</p>
-        <p>Compartir y explorar entre colegas en un marco de equidad y respeto, puede orientar las acciones educativas hacia la innovación pedagógica empleando las Habilidades del siglo XXI, el pensamiento de diseño y el aprendizaje a profundidad.</p>
+      <div className="network">
+        <div>
+          <img src="assets/images/red.png" />
+        </div>
+        <div className="network-info">
+          <p>La Red Potencia impulsa el análisis de experiencias de aprendizaje exitosas centradas en los alumnos y propicia el trabajo colaborativo entre docentes para enriquecer su formación permanente mediante una comunidad en red..</p>
+          <p>Compartir y explorar entre colegas en un marco de equidad y respeto, puede orientar las acciones educativas hacia la innovación pedagógica empleando las Habilidades del siglo XXI, el pensamiento de diseño y el aprendizaje a profundidad.</p>
+        </div>
       </div>
     )
   },

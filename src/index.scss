@@ -27,6 +27,10 @@ a:hover, .a:hover, a:focus, .a:focus {
   @include custom-border;
 }
 
+.hidden {
+  display: none;
+}
+
 .clearfix {
   zoom: 1;
 
@@ -606,6 +610,34 @@ header {
       display: inline-block;
       text-align: left;
     }
+  }
+
+  .network {
+    display: flex;
+
+    & > div {
+      flex: 1;
+    }
+
+    p {
+      padding: 0 1em;
+      text-align: left;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+
+      & > div {
+        &:last-child {
+          order: -1;
+        }
+      }
+    }
+  }
+
+  .network-info {
+    padding-top: 3em;
   }
 }
 
