@@ -26,15 +26,7 @@ const tabs = [
       <div>
         <p>En Potencia hemos creado instrumentos para evaluar diferentes aspectos de interés para las instituciones educativas, contenidos en nuestra propuesta pedagógica:
         </p>
-        <ul>
-          <li>Competencia digital institucional</li>
-          <li>Pensamiento crítico</li>
-          <li>Trabajo colaborativo</li>
-          <li>Inteligencias múltiples</li>
-          <li>Estilos de aprendizaje</li>
-          <li>Alfabetización mediática e informacional</li>
-          <li>Proyectos escolares</li>
-        </ul>
+        <div><img src="assets/images/esquema-2.png" /></div>
       </div>
     )
   },
