@@ -54,7 +54,7 @@ export class Header extends Component {
                   <img src="assets/images/logos/red-magisterial.png" />
                 </a>
               </li>
-              <li className="list-image">
+              <li className="list-image-g">
                 <a href="#">
                   <img src="assets/images/logos/google-partner.png" />
                 </a>

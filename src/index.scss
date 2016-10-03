@@ -128,6 +128,29 @@ nav {
       a {
         padding-bottom: 57px;
       }
+
+      @media (max-width: 767px) {
+        img {
+          margin-left: 0;
+        }
+
+      }
+    }
+    &.list-image-g {
+      img {
+        margin-top: 0;
+      }
+
+      a {
+        padding-bottom: 57px;
+      }
+
+      @media (max-width: 767px) {
+        img {
+          margin-left: -15px;
+        }
+        
+      }
     }
   }
 
