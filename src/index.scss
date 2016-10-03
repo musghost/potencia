@@ -95,6 +95,7 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0;
+    vertical-align: top;
 
     @media (max-width: 767px) {
       display: none;
@@ -118,10 +119,37 @@ nav {
         }
       }
     }
+
+    &.list-image {
+      img {
+        margin-top: 0;
+        margin-left: 0;
+      }
+
+      a {
+        padding-bottom: 50px;
+      }
+
+      @media (max-width: 767px) {
+        img {
+          margin-left: 0;
+        }
+
+      }
+    }
+    &.list-image-g {
+
+      @media (max-width: 767px) {
+        img {
+          margin-left: -15px;
+        }
+        
+      }
+    }
   }
 
   a {
-    padding: 38px 40px 38px 30px;
+    padding: 30px 20px 30px 20px;
     display: inline-block;
     height: 2em;
     text-decoration: none;
