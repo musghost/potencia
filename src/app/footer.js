@@ -1,6 +1,43 @@
+import {config} from './config';
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
+import $ from 'jquery';
 
 export class Footer extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      showForm: true,
+      errorForm: false
+    };
+
+    this.handleSend = this.handleSend.bind(this);
+  }
+
+  handleSend(e) {
+    e.preventDefault();
+
+    const data = {
+      name: ReactDOM.findDOMNode(this.refs.name).value,
+      email: ReactDOM.findDOMNode(this.refs.email).value,
+      message: ReactDOM.findDOMNode(this.refs.message).value
+    };
+
+    $.ajax({
+      type: 'POST',
+      url: config.comment.url,
+      data: JSON.stringify(data),
+      contentType: 'application/json',
+      error: () => {
+        this.setState({errorForm: true});
+      },
+      success: (data) => {
+        this.setState({showForm: false});
+      }
+    });
+  }
+
   render() {
     return (
       <footer>
@@ -13,16 +50,24 @@ export class Footer extends Component {
               <p>+52 (55) 3547 0082</p>
             </div>
             <div></div>
-            <div>
+            <div className="form-alone">
               <h3>Estamos a tus órdenes</h3>
-              <div className="form">
-                <input type="text" placeholder="Escribe tu nombre*" />
-                <input type="email" placeholder="Escribe tu email*" />
-                <button type="button">Enviar</button>
+              <form onSubmit={this.handleSend} className={this.state.showForm?'':'hidden'}>
+                <div className="form">
+                  <input type="text" ref="name" placeholder="Escribe tu nombre*" required />
+                  <input type="email" ref="email" placeholder="Escribe tu email*" required />
+                  <button type="submit">Enviar</button>
+                </div>
+                <div className="textarea">
+                  <textarea ref="message" placeholder="Escribe tu mensaje" required></textarea>
+                </div>
+              </form>
+              <div className={this.state.showForm?'hidden':''}>
+                <p>Gracias por enviar tus datos, nos comunicaremos contigo muy pronto.</p>
               </div>
-            </div>
-            <div className="textarea">
-              <textarea placeholder="Escribe tu mensaje"></textarea>
+              <div className={this.state.errorForm?'':'hidden'}>
+                <p>Hubo un error al tratar de enviar tus datos.</p>
+              </div>
             </div>
           </div>
           <div className="social">
