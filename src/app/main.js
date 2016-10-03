@@ -175,7 +175,7 @@ export class Main extends Component {
                 <p>Somos un consorcio editorial con 24 años de experiencia en el mercado educativo en México.</p>
                 <p>Somos un equipo de profesionales en el desarrollo de materiales educativos y en la construcción de plataformas tecnológicas para el aprendizaje y la formación docente.</p>
                 <p>Y tenemos una gran experiencia en la creación de libros de texto gratuito para la educación básica.</p>
-                <a href="#">
+                <a href="http://edilar.com" target="_blank">
                   Leer más
                   <i className="fa fa-long-arrow-right"></i>
                 </a>

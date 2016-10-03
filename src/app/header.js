@@ -49,6 +49,16 @@ export class Header extends Component {
               <span></span>
             </div>
             <ul className={this.state.opened?'is-active':''}>
+              <li>
+                <a href="#">
+                  <img src="assets/images/logos/red-magisterial.png" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/images/logos/google-partner.png" />
+                </a>
+              </li>
               <li><a href="#" onClick={this.handleClick}>Contacto<br/>&nbsp;</a></li>
             </ul>
           </nav>

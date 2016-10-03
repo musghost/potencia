@@ -151,9 +151,31 @@
     margin-bottom: 35px;
   }
 
+  .field-group {
+    margin-bottom: 20px;
+
+    &.show-errors {
+      .error-msg {
+        display: block;
+      }
+
+      input, textarea {
+        border-color: #ff0000;
+      }
+    }
+  }
+
+  .error-msg {
+    font-size: 10px;
+    padding-left: 2px;
+    color: #ff0000;
+    display: none;
+  }
+
   textarea, input {
     border-color: #bdbdbd;
     font-size: 14px;
+    margin-bottom: 0;
 
     &::-webkit-input-placeholder {
       @include modal-placeholder;
