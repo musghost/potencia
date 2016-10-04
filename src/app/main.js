@@ -64,8 +64,6 @@ export class Main extends Component {
     }
     this.setState({index: next});
     const videoMp4 = `assets/video/${videos[next]}.mp4`;
-    console.log(videos, next);
-    console.log(videoMp4);
     video.src = videoMp4;
     video.play();
   }

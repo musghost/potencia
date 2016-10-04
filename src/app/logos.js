@@ -11,7 +11,7 @@ export class Logos extends Component {
       },
       records: {
         from: 0,
-        to: 115000
+        to: 145000
       },
       materials: {
         from: 0,
