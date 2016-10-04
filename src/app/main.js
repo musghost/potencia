@@ -16,9 +16,11 @@ export class Main extends Component {
 
     this.state = {
       loaded: false,
-      modalIsOpen: false
+      modalIsOpen: false,
+      index: 0
     };
     this.handleClick = this.handleClick.bind(this);
+    this.handleOnEnded = this.handleOnEnded.bind(this);
   }
 
   handleClick(event) {
@@ -41,12 +43,34 @@ export class Main extends Component {
     sr.reveal('.component-img', {duration: 1000});
     sr.reveal('.props-img', {duration: 2000, rotate: { y: 50 }});
     sr.reveal('.players-img', {duration: 2000, rotate: { z: 100 }});
+    let video = document.getElementById('video');
+    const videoMp4 = `assets/video/${videos[this.state.index]}.mp4`;
+    video.src = videoMp4;
+    video.play();
+  }
+
+  componentWillMount() {
+    this.setState({index: this.getRandomInt(0, 2)});
+  }
+
+  handleOnEnded() {
+    let video = document.getElementById('video');
+
+    let next;
+    if(this.state.index + 1 >= videos.length) {
+      next = 0;
+    } else {
+      next = this.state.index + 1;
+    }
+    this.setState({index: next});
+    const videoMp4 = `assets/video/${videos[next]}.mp4`;
+    console.log(videos, next);
+    console.log(videoMp4);
+    video.src = videoMp4;
+    video.play();
   }
 
   render() {
-    const index = this.getRandomInt(0, 2);
-    const videoMp4 = `assets/video/${videos[index]}.mp4`;
-    const videoWebm = `assets/video/${videos[index]}.webm`;
     return (
       <div>
         <Header />
@@ -54,9 +78,7 @@ export class Main extends Component {
           <div className="potencia">
             <img src="assets/potencia.png" className="potencia-image" />
           </div>
-          <video autoPlay loop className="video">
-            <source src={videoMp4} type='video/mp4' / >
-            <source src={videoWebm} type='video/webm' />
+          <video id="video" className="video" onPause={this.handleOnEnded}>
           </video>
         </div>
         <div className="container">
