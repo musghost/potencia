@@ -112,6 +112,8 @@ nav {
     &:last-child {
       a {
         padding-right: 0;
+        height: 3.4em;
+        line-height: 3.4em;
         &:hover {
           &:after {
             right: 0;
@@ -162,12 +164,13 @@ nav {
     line-height: 1.3em;
     transition: all 0.4s ease;
     color: #fff;
+    float: left;
     
     &:after {
       left: 0;
       right: 0;
       transition: left 0.4s ease, right 0.4s ease;
-      bottom: -2px;
+      bottom: -6px;
       height: 3px;
       content: '';
       background: #21af58;
@@ -175,7 +178,7 @@ nav {
       opacity: 0;
     }
 
-    &:hover {
+    &:hover, &:active {
       color: #fff;
 
       &:after {
@@ -206,6 +209,7 @@ nav {
       display: block;
       width: 100%;
       border-bottom: 1px solid #4d4d4d;
+      overflow: hidden;
       &:last-child {
         a {
           padding-right: 0;
@@ -343,7 +347,7 @@ header {
     display: inline-block;
     background: #ff5722;
     box-shadow: 1px 1px 2px 2px #2f6c31;
-    border: 2px solid #e64a19;
+    border: 2px solid #d4cfce;
     border-radius: 2px;
     padding: 15px 30px;
     text-transform: uppercase;

@@ -50,7 +50,12 @@ export class Header extends Component {
             </div>
             <ul className={this.state.opened?'is-active':''}>
               <li className="list-image">
-                <a href="#">
+                <a href="http://edilar.com/" target="_blank">
+                  <img src="assets/images/logos/edilar.png" />
+                </a>
+              </li>
+              <li className="list-image">
+                <a href="http://redmagisterial.com/" target="_blank">
                   <img src="assets/images/logos/red-magisterial.png" />
                 </a>
               </li>
