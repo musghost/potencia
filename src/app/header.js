@@ -60,7 +60,7 @@ export class Header extends Component {
                 </a>
               </li>
               <li className="list-image list-image-g">
-                <a href="#">
+                <a href="https://www.google.com/edu/" target="_blank">
                   <img src="assets/images/logos/google-partner.png" />
                 </a>
               </li>
