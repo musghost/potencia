@@ -201,7 +201,9 @@ export class Main extends Component {
                 </a>
               </div>
               <div className="image">
-                <img src="assets/images/about.jpg" />
+                <a href="http://edilar.com" target="_target">
+                  <img src="assets/images/about.jpg" />
+                </a>
               </div>
             </div>
           </div>

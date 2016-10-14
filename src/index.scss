@@ -750,7 +750,7 @@ header {
       }
 
       img {
-        width: 100%;
+        max-width: 100%;
       }
     }
   }
@@ -778,11 +778,21 @@ header {
 
   .image {
     flex: 1;
+
+    a {
+      position: static;
+    }
+
+    img {
+      max-width: 100%;
+    }
   }
 
   .about-info {
     position: relative;
     padding-right: 19%;
+    flex-basis: 55%;
+    padding-bottom: 25px;
   }
 
   a {
