@@ -127,7 +127,7 @@ export class Main extends Component {
                 <div><img src="assets/images/item4.png" className="players-img" /></div>
                 <div>
                   <h2>Estudiante</h2>
-                  <p>Le ofrecemos la mejor experiencia de trabajo por medio de carpetas vinculadas a nuestra plataforma digital, especialmente diseñada para potenciar su experiencia de aprendizaje en el aula y fuera de ella.</p>
+                  <p>Le ofrecemos la mejor experiencia de trabajo por medio de carpetas en soporte papel vinculadas a nuestra plataforma digital, especialmente diseñada para potenciar su experiencia de aprendizaje en el aula y fuera de ella.</p>
                 </div>
               </div>
               <div className="player">
