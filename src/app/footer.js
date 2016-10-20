@@ -46,7 +46,7 @@ export class Footer extends Component {
             <div>
               <h3>Contacto</h3>
               <p>En Potencia queremos saber más de tus necesidades educativas y también nosotros poder presentarte nuestros programas.</p>
-              <p>Por favor ponte en contacto con nosotros para que podamos agendar una vista.</p>
+              <p>Por favor ponte en contacto con nosotros para que podamos agendar una visita.</p>
               <p>+52 (55) 3547 0082</p>
             </div>
             <div></div>
