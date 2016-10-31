@@ -7,11 +7,11 @@ export class Logos extends Component {
     this.state = {
       books: {
         from: 0,
-        to: 530000
+        to: 145000
       },
       records: {
         from: 0,
-        to: 145000
+        to: 296000
       },
       materials: {
         from: 0,
@@ -19,7 +19,7 @@ export class Logos extends Component {
       },
       donate: {
         from: 0,
-        to: 1500
+        to: 25
       }
     };
 
@@ -83,31 +83,31 @@ export class Logos extends Component {
         <div className="container">
           <div className="statistics">
             <div className="statistic">
-              <img src="assets/images/logos/logo1.png" />
-              <div className="spec">
-                <h1 className="books">{this.numberWithCommas(this.state.books.from)}</h1>
-                <p>Libros entregados</p>
-              </div>
-            </div>
-            <div className="statistic">
               <img src="assets/images/logos/logo2.png" />
               <div className="spec">
                 <h1 className="records">{this.numberWithCommas(this.state.records.from)}</h1>
-                <p>Registros en Red Magisterial</p>
+                <p>Docentes han participado en sus programas</p>
+              </div>
+            </div>
+            <div className="statistic">
+              <img src="assets/images/logos/logo1.png" />
+              <div className="spec">
+                <h1 className="books">{this.numberWithCommas(this.state.books.from)}</h1>
+                <p><a href="http://www.redmagisterial.com/" target="_blank">registros en Red Magisterial</a></p>
               </div>
             </div>
             <div className="statistic">
               <img src="assets/images/logos/logo3.png" />
               <div className="spec">
                 <h1 className="materials">{this.numberWithCommas(this.state.materials.from)}</h1>
-                <p>Materiales Educativos Digitales</p>
+                <p><a href="http://www.redmagisterial.com/" target="_blank">Materiales Educativos Digitales</a></p>
               </div>
             </div>
             <div className="statistic">
               <img src="assets/images/logos/logo4.png" />
               <div className="spec">
                 <h1 className="donate">{this.numberWithCommas(this.state.donate.from)}</h1>
-                <p>Libros donados</p>
+                <p>años aportando a la comunidad educativa en México</p>
               </div>
             </div>
           </div>

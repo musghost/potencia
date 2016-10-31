@@ -120,7 +120,7 @@ export class Main extends Component {
         </div>
         <div className="tecnology">
           <h1>Actores en Potencia</h1>
-          <p>En Potencia entendemos a todos los actores de la comunidad educativa y hoy la tecnología<br />nos permite usar herramientas para cada uno de ellos que potencialice su experiencia y el resultado en el aprendizaje de los niños. </p>
+          <p>Le ofrecemos la mejor experiencia de trabajo por medio de carpetas en soporte papel vinculadas a nuestra plataforma digital, especialmente diseñada para potenciar su experiencia de aprendizaje en el aula y fuera de ella. </p>
           <div className="container">
             <div className="players">
               <div className="player">
@@ -192,13 +192,7 @@ export class Main extends Component {
             <div className="about-wrapper">
               <div className="about-info">
                 <h1>Acerca de nosotros</h1>
-                <p>Somos un consorcio editorial con 24 años de experiencia en el mercado educativo en México.</p>
-                <p>Somos un equipo de profesionales en el desarrollo de materiales educativos y en la construcción de plataformas tecnológicas para el aprendizaje y la formación docente.</p>
-                <p>Y tenemos una gran experiencia en la creación de libros de texto gratuito para la educación básica.</p>
-                <a href="http://edilar.com" target="_blank">
-                  Leer más
-                  <i className="fa fa-long-arrow-right"></i>
-                </a>
+                <p><span className="p-bold">Somos</span> un equipo de trabajo interdisciplinario que, un día, imaginó que era posible innovar en la educación. Hacerlo es nuestra tarea y el resultado es <span className="p-bold">Potencia educativa</span>, cuya finalidad es que cada uno de los actores involucrados en el proceso formativo de los estudiantes encuentren una verdadera solución global, con base tecnológica, para potenciar sus habilidades y puedan enfrentar su presente y su futuro con las mejores herramientas a su alcance. <span className="p-bold">Somos</span> un equipo de entusiastas que creemos en el conocimiento, en las capacidades personales de los estudiantes y en que cada uno puede de conocerse a sí mismo, dar solución a desafíos y pensar por sí mismo. <span className="p-bold">Somos</span> un equipo que construye hoy y forja un futuro.</p>                
               </div>
               <div className="image">
                 <a href="http://edilar.com" target="_target">
