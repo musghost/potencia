@@ -304,6 +304,14 @@ header {
     transform: translateX(-50%);
   }
 
+  .arrowDown {
+      position: absolute;
+      top: 84%;
+      left: 50%;
+      margin-left: -10px;
+      z-index: 1;
+    }
+
   .potencia {
     position: absolute;
     left: 0;

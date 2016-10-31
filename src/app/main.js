@@ -73,12 +73,15 @@ export class Main extends Component {
       <div>
         <Header />
         <div className="background">
+          <img src="assets/images/arrowDown.png" className="arrowDown" />
           <div className="potencia">
-            <img src="assets/potencia.png" className="potencia-image" />
+            <div className="prueba">
+              <img src="assets/potencia.png" className="potencia-image" />
+            </div>
           </div>
           <video id="video" className="video" onPause={this.handleOnEnded}>
           </video>
-        </div>
+        </div>        
         <div className="container">
           <div className="get-info clearfix">
             <div>
