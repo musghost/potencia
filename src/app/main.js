@@ -73,7 +73,6 @@ export class Main extends Component {
       <div>
         <Header />
         <div className="background">
-          <img src="assets/images/arrowDown.png" className="arrowDown" />
           <div className="potencia">
             <div className="prueba">
               <img src="assets/potencia.png" className="potencia-image" />

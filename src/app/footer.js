@@ -74,7 +74,7 @@ export class Footer extends Component {
             <a href="https://web.facebook.com/potenciaeducativa/" target="_blank" className="facebook">
               <i className="fa fa-facebook"></i>
             </a>
-            <a href="@potenciaedu" target="_blank" className="twitter">
+            <a href="https://twitter.com/potenciaedu" target="_blank" className="twitter">
               <i className="fa fa-twitter"></i>
             </a>
             <a href="#" className="google">
