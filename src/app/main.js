@@ -122,7 +122,7 @@ export class Main extends Component {
         </div>
         <div className="tecnology">
           <h1>Actores en Potencia</h1>
-          <p>Le ofrecemos la mejor experiencia de trabajo por medio de carpetas en soporte papel vinculadas a nuestra plataforma digital, especialmente diseñada para potenciar su experiencia de aprendizaje en el aula y fuera de ella. </p>
+          <p>Le ofrecemos la mejor experiencia de trabajo por medio de carpetas en soporte papel vinculadas<br />a nuestra plataforma digital, especialmente diseñada para potenciar su experiencia de aprendizaje en el aula y fuera de ella. </p>
           <div className="container">
             <div className="players">
               <div className="player">
@@ -194,7 +194,9 @@ export class Main extends Component {
             <div className="about-wrapper">
               <div className="about-info">
                 <h1>Acerca de nosotros</h1>
-                <p><span className="p-bold">Somos</span> un equipo de trabajo interdisciplinario que, un día, imaginó que era posible innovar en la educación. Hacerlo es nuestra tarea y el resultado es <span className="p-bold">Potencia educativa</span>, cuya finalidad es que cada uno de los actores involucrados en el proceso formativo de los estudiantes encuentren una verdadera solución global, con base tecnológica, para potenciar sus habilidades y puedan enfrentar su presente y su futuro con las mejores herramientas a su alcance. <span className="p-bold">Somos</span> un equipo de entusiastas que creemos en el conocimiento, en las capacidades personales de los estudiantes y en que cada uno puede de conocerse a sí mismo, dar solución a desafíos y pensar por sí mismo. <span className="p-bold">Somos</span> un equipo que construye hoy y forja un futuro.</p>                
+                <p><span className="p-bold">Somos</span> un equipo de trabajo interdisciplinario que, un día, imaginó que era posible innovar en la educación. Hacerlo es nuestra tarea y el resultado es <span className="p-bold">Potencia educativa</span>, cuya finalidad es que cada uno de los actores involucrados en el proceso formativo de los estudiantes encuentren una verdadera solución global, con base tecnológica, para potenciar sus habilidades y puedan enfrentar su presente y su futuro con las mejores herramientas a su alcance. </p>
+                <p><span className="p-bold">Somos</span> un equipo de entusiastas que creemos en el conocimiento, en las capacidades personales de los estudiantes y en que cada uno puede de conocerse a sí mismo, dar solución a desafíos y pensar por sí mismo.</p>
+                <p><span className="p-bold">Somos</span> un equipo que construye hoy y forja un futuro.</p>
               </div>
               <div className="image">
                 <a href="http://edilar.com" target="_target">

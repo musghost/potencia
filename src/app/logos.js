@@ -100,7 +100,7 @@ export class Logos extends Component {
               <img src="assets/images/logos/logo3.png" />
               <div className="spec">
                 <h1 className="materials">{this.numberWithCommas(this.state.materials.from)}</h1>
-                <p><a href="http://www.redmagisterial.com/" target="_blank">Materiales Educativos Digitales</a></p>
+                <p><a href="http://www.redmagisterial.com/med/" target="_blank">Materiales Educativos Digitales</a></p>
               </div>
             </div>
             <div className="statistic">

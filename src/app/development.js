@@ -5,7 +5,7 @@ const tabs = [
     name: 'Certificaciones',
     content: (
       <div>
-        <p>Establecimos alianzas estratégicas para ofrecer a profesionales de la educación oportunidades de desarrollo profesional a través de procesos de formación, evaluación y certificación que están acreditados a nivel nacional por el CONOCER, y tienen reconocimiento internacional por Club UNESCO y Google For Education</p>
+        <p>Establecimos alianzas estratégicas para ofrecer a profesionales de la educación oportunidades de desarrollo profesional a través de procesos de formación, evaluación y certificación que están acreditados a nivel nacional por el CONOCER, y tienen reconocimiento internacional por Club UNESCO y Google for Education</p>
         <img src="assets/images/items.png" />
       </div>
     ),
