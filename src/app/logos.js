@@ -93,21 +93,21 @@ export class Logos extends Component {
               <img src="assets/images/logos/logo1.png" />
               <div className="spec">
                 <h1 className="books">{this.numberWithCommas(this.state.books.from)}</h1>
-                <p><a href="http://www.redmagisterial.com/" target="_blank">registros en Red Magisterial</a></p>
+                <p><a className="no-underline" href="http://www.redmagisterial.com/" target="_blank">Registros en Red Magisterial</a></p>
               </div>
             </div>
             <div className="statistic">
               <img src="assets/images/logos/logo3.png" />
               <div className="spec">
                 <h1 className="materials">{this.numberWithCommas(this.state.materials.from)}</h1>
-                <p><a href="http://www.redmagisterial.com/" target="_blank">Materiales Educativos Digitales</a></p>
+                <p><a className="no-underline" href="http://www.redmagisterial.com/" target="_blank">Materiales Educativos Digitales</a></p>
               </div>
             </div>
             <div className="statistic">
               <img src="assets/images/logos/logo4.png" />
               <div className="spec">
                 <h1 className="donate">{this.numberWithCommas(this.state.donate.from)}</h1>
-                <p>años aportando a la comunidad educativa en México</p>
+                <p>Años aportando a la comunidad educativa en México</p>
               </div>
             </div>
           </div>
