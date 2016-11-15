@@ -73,6 +73,9 @@ export class Main extends Component {
       <div>
         <Header />
         <div className="background">
+          <div className="arrow">
+            <span className="scroll-inside"></span>
+          </div>
           <div className="potencia">
             <div className="prueba">
               <img src="assets/potencia.png" className="potencia-image" />
