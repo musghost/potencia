@@ -100,7 +100,7 @@ export class Main extends Component {
         </div>
         <div className="solutions clearfix">
           <div className="container">
-            <h1>Una solución educativa global con tres componentes,<br />para atender las necesidades de los colegios de educación básica</h1>
+            <h1>Una solución educativa integral con tres componentes,<br />para atender las necesidades de los colegios de educación básica</h1>
             <div className="components">
               <div className="component">
                 <img src="assets/images/component1.jpg" className="component-img" />
