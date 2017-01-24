@@ -125,7 +125,7 @@ export class Main extends Component {
         </div>
         <div className="tecnology">
           <h1>Actores en Potencia</h1>
-          <p>Le ofrecemos la mejor experiencia de trabajo por medio de carpetas en soporte papel vinculadas<br />a nuestra plataforma digital, especialmente diseñada para potenciar su experiencia de aprendizaje en el aula y fuera de ella. </p>
+          <p>El ecosistema de Potencia conecta a los actores de la comunidad educativa con los medios tecnológicos para una interacción efectiva.</p>
           <div className="container">
             <div className="players">
               <div className="player">
