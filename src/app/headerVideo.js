@@ -1,0 +1,80 @@
+import React, {Component} from 'react';
+import {SendMessage} from './modals/send-message';
+
+export class HeaderVideo extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      opened: false,
+      modalIsOpen: false
+    };
+    this.handleToggleMenu = this.handleToggleMenu.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleToggleMenu() {
+    this.setState({
+      opened: !this.state.opened
+    });
+  }
+
+  handleClick(event) {
+    if(typeof event !== 'undefined') {
+      event.preventDefault();
+    }
+    this.setState({modalIsOpen: !this.state.modalIsOpen});
+  }
+
+  render() {
+    return (
+      <header>
+        <div className="submenu">
+          <div className="container">
+            <ul>
+              <li><a target="_blank" href="https://web.facebook.com/potenciaeducativa/"><i className="fa fa-facebook"></i></a></li>
+              <li><a target="_blank" href="https://twitter.com/potenciaedu"><i className="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i className="fa fa-google-plus"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div className="container">
+          <nav className="clearfix">
+            <span>
+              <img src="assets/potencia.png" />
+            </span>
+            <div className="hamburguer" onClick={this.handleToggleMenu}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul className={this.state.opened?'is-active':''}>
+              <li className="list-image">
+                <a href="http://edilar.com/" target="_blank">
+                  <p>Quienes<br/>somos</p>
+                </a>
+              </li>
+              <li className="list-image">
+                <a href="http://redmagisterial.com/" target="_blank">
+                  <p>Propuesta<br/>pedagójica</p>
+                </a>
+              </li>
+              <li className="list-image list-image-g">
+                <a href="https://www.google.com/edu/" target="_blank">
+                  <p>Plataforma<br/>tecnológica</p>
+                </a>
+              </li>
+              <li className="list-image list-image-g">
+                <a href="https://www.google.com/edu/" target="_blank">
+                  <p>Desarrollo<br/>profesional</p>
+                </a>
+              </li>
+              <li><a href="#" onClick={this.handleClick}>Contacto<br/>&nbsp;</a></li>
+            </ul>
+          </nav>
+        </div>
+        <SendMessage isOpen={this.state.modalIsOpen} handleClick={this.handleClick} />
+      </header>
+    );
+  }
+}
