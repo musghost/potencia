@@ -80,7 +80,7 @@ export class Main extends Component {
             <div className="prueba">
               <img src="assets/potencia.png" className="potencia-image" />
             </div>
-            <a className="btn-know" href="#" onClick={this.handleClick}>Conoce nuestra plataforma</a>
+            <a className="btn-know" href="/#/video">Conoce nuestra plataforma</a>
           </div>
           <video id="video" className="video" onPause={this.handleOnEnded}>
           </video>

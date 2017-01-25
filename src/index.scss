@@ -1117,10 +1117,62 @@ textarea {
 }
 
 .potencia-video {
-  background-color: #3284B6 ;
+  position: relative;
+  background: {
+    image: url('assets/images/fondo.jpg');
+    position: center center;
+    repeat: no-repeat;
+    size: cover;
+  };
+
+  &:after {
+    display: none;
+  }
 
   .video-style {
-    margin-top: 15%;
-    margin-left: 29%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+
+    iframe {
+      margin: 0 auto;
+      display: block;
+      border: 0;
+    }
+
+    .btn {
+      border: 2px solid #E71E64;
+      border-radius: 2px;
+      width: 180px;
+      padding: 12px 12px;
+      color: white;
+      cursor: pointer;
+      font-size: 0.9em;
+      margin: 10px 5px 0;
+    }
+
+    .btn-see {
+      background: none;
+
+      &:hover {
+        background: white;
+        color: black;
+      }
+    }
+
+    .btn-visit {
+      background: #E71E64;
+
+      &:hover {
+        background: white;
+        color: black;
+      }
+    }
   }
+}
+
+.text-center {
+  text-align: center;
 }
