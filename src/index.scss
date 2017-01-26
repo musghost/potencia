@@ -1136,10 +1136,20 @@ textarea {
     left: 0;
     right: 0;
 
-    iframe {
+    iframe,
+    .iframe {
       margin: 0 auto;
       display: block;
       border: 0;
+    }
+
+    .iframe {
+      width: 660px;
+      height: 415px;
+      background: {
+        image: url('/assets/images/comming-soon.jpg');
+        size: cover;
+      }
     }
 
     .btn {
