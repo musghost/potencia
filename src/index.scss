@@ -77,7 +77,17 @@ a:hover, .a:hover, a:focus, .a:focus {
         padding-right: 0;
       }
     }
+
+    button {
+      background-color: transparent;
+      color: #adb4b9;
+      font-size: 15px;
+      font-weight: bold;
+      border: none;
+      margin-left: 30px;
+    }
   }
+
 }
 
 nav {
