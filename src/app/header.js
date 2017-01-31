@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {SendMessage} from './modals/send-message';
+import {Login} from './modals/login';
 
 export class Header extends Component {
 
@@ -7,10 +8,18 @@ export class Header extends Component {
     super(props);
     this.state = {
       opened: false,
-      modalIsOpen: false
+      modalIsOpen: false,
+      modalLoginOpen: false
     };
     this.handleToggleMenu = this.handleToggleMenu.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.handleOpen = this.handleOpen.bind(this);
+  }
+
+  handleOpen(){
+    this.setState({
+      modalLoginOpen: !this.state.modalLoginOpen
+    });
   }
 
   handleToggleMenu() {
@@ -35,6 +44,11 @@ export class Header extends Component {
               <li><a target="_blank" href="https://web.facebook.com/potenciaeducativa/"><i className="fa fa-facebook"></i></a></li>
               <li><a target="_blank" href="https://twitter.com/potenciaedu"><i className="fa fa-twitter"></i></a></li>
               <li><a href="#"><i className="fa fa-google-plus"></i></a></li>
+              <li>
+                <button onClick={this.handleOpen}>
+                  LOGIN
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -69,6 +83,7 @@ export class Header extends Component {
           </nav>
         </div>
         <SendMessage isOpen={this.state.modalIsOpen} handleClick={this.handleClick} />
+        <Login isOpen={this.state.modalLoginOpen} handleClick={this.handleOpen} />
       </header>
     );
   }
