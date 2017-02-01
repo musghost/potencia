@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import $ from 'jquery';
 import {Modal, ModalBody, Button, ModalHeader, ModalFooter} from 'elemental';
 import config from './../config';
 
@@ -8,8 +7,6 @@ export class Login extends Component {
 
   constructor(props) {
     super(props);
-
-    this.handleSubmit = this.handleSubmit.bind(this);
     this.closeModal = this.closeModal.bind(this);
   }
 
