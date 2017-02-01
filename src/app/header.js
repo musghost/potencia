@@ -45,7 +45,7 @@ export class Header extends Component {
               <li><a target="_blank" href="https://twitter.com/potenciaedu"><i className="fa fa-twitter"></i></a></li>
               <li><a href="#"><i className="fa fa-google-plus"></i></a></li>
               <li>
-                <button onClick={this.handleOpen}>
+                <button type="button" onClick={this.handleOpen}>
                   LOGIN
                 </button>
               </li>
