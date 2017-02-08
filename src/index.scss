@@ -506,6 +506,8 @@ header {
 
   .players {
     display: flex;
+    flex-direction: column;
+    padding: 0 10%;
 
     @media (max-width: 767px) {
       flex-direction: column;
@@ -516,6 +518,10 @@ header {
     flex-basis: 50%;
     display: flex;
     margin-bottom: 40px;
+
+    div:first-child {
+      flex-basis: 170px;
+    }
     @media (max-width: 767px) {
       flex-basis: auto;
       div:first-child {
@@ -525,11 +531,13 @@ header {
     }
 
     img {
+      width: 135px;
       max-width: 100%;
     }
 
     h2 {
       font-weight: 100;
+      margin-top: 0;
     }
 
     p {

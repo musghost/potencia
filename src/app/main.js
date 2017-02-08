@@ -126,14 +126,14 @@ export class Main extends Component {
         </div>
         <div className="tecnology">
           <h1>Actores en Potencia</h1>
-          <p>El ecosistema de Potencia conecta a los actores de la comunidad educativa con los medios tecnológicos para una interacción efectiva.</p>
+          <p>El ecosistema de Potencia conecta a los actores de la comunidad educativa<br/>con los medios tecnológicos para una interacción efectiva.</p>
           <div className="container">
             <div className="players">
               <div className="player">
                 <div><img src="assets/images/item4.png" className="players-img" /></div>
                 <div>
                   <h2>Estudiante</h2>
-                  <p>Le ofrecemos la mejor experiencia de trabajo por medio de carpetas en soporte papel vinculadas a nuestra plataforma digital, especialmente diseñada para potenciar su experiencia de aprendizaje en el aula y fuera de ella.</p>
+                  <p>Le ofrecemos la mejor experiencia de trabajo por medio de fichas o Experiencias de aprendizaje impresas, vinculadas a nuestra plataforma digital, especialmente diseñada para potenciar su experiencia de aprendizaje en el aula y fuera de ella.</p>
                 </div>
               </div>
               <div className="player">
@@ -146,17 +146,17 @@ export class Main extends Component {
             </div>
             <div className="players">
               <div className="player">
-                <div><img src="assets/images/item3.png" className="players-img" /></div>
-                <div>
-                  <h2>Aula</h2>
-                  <p>La equipamos con hardware para potenciar el ambiente de aprendizaje y el desempeño de docentes y estudiantes.</p>
-                </div>
-              </div>
-              <div className="player">
                 <div><img src="assets/images/item2.png" className="players-img" /></div>
                 <div>
                   <h2>Familia</h2>
                   <p>Le comunicamos el desempeño de los estudiantes mediante nuestro sistema digital (app), lo que hace posible que la información fluya oportunamente entre el colegio, el estudiante y la familia.</p>
+                </div>
+              </div>
+              <div className="player">
+                <div><img src="assets/images/item5.png" className="players-img" /></div>
+                <div>
+                  <h2>Ambiente de apoyo: Aula</h2>
+                  <p>La equipamos con hardware para potenciar el ambiente de aprendizaje y el desempeño de docentes y estudiantes.</p>
                 </div>
               </div>
             </div>
