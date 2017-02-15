@@ -18,7 +18,7 @@ export class Video extends Component {
         <Header />
         <div className="potencia-video background">
           <div className="video-style">
-            <div className="iframe"></div>
+            <iframe src="https://www.youtube.com/embed/ZwqiPM3Nygo?ecver=2" width="660" height="415" frameborder="0" allowfullscreen></iframe>            
             <div className="text-center">
               <button className="btn btn-see">Ver video</button>
               <button className="btn btn-visit" onClick={() => this.setState({modalOpen: true})}>Agendar una visita</button>
