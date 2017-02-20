@@ -18,7 +18,7 @@ export class Video extends Component {
         <Header />
         <div className="potencia-video background">
           <div className="video-style">
-            <iframe src="https://www.youtube.com/embed/FJjj59fWqzQ" width="660" height="415" frameBorder="0" allowFullScreen></iframe>            
+            <iframe src="https://player.vimeo.com/video/204449962" width="660" height="415" frameBorder="0" allowFullScreen></iframe>
             <div className="text-center">
               <button className="btn btn-visit" onClick={() => this.setState({modalOpen: true})}>Agendar una visita</button>
             </div>
