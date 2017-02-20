@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import {Modal, ModalBody, Button, ModalHeader, ModalFooter} from 'elemental';
-import config from './../config';
+import {config} from '../config';
 
 export class SendMessage extends Component {
   constructor(props) {
