@@ -65,6 +65,60 @@ a:hover, .a:hover, a:focus, .a:focus {
     &:hover {
       color: #fff;
     }
+
+    &.btn-payment {
+      background-color: #E71E64;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      padding: 7px 20px;
+      border-radius: 25px;
+      font-size: 15px;
+      position: relative;
+      padding-right: 40px;
+      transition: all 0.4s ease;
+      box-shadow: 1px 1px 1px 1px #351604;
+      border: 1px solid #ffffff;
+      margin-right: 25px;
+
+      &::after {
+        background-image: url('assets/images/paymentIcon.png');
+        background-size: cover;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        content: '';
+        right: 14px;
+        top: 5px;
+        transition: all 0.4s ease;
+      }
+
+      &:hover {
+        padding: 10px 25px;
+        padding-right: 45px;
+        background-color: #f16193;
+        border-color: #D91662;
+
+        &::after {
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        padding-right: 20px;
+        margin: 0;
+
+        &:hover {
+          padding: 10px;
+        }
+
+        &::after {
+          content: none;
+        }
+      }
+    }
   }
 
   li {
@@ -90,6 +144,10 @@ a:hover, .a:hover, a:focus, .a:focus {
       &:hover {
         background-color: #E9407B;
         color: #fff;
+      }
+
+      @media (max-width: 768px) {
+        margin: 0 10px;
       }
     }
   }
@@ -161,7 +219,7 @@ nav {
         img {
           margin-left: -15px;
         }
-        
+
       }
     }
   }
@@ -181,7 +239,7 @@ nav {
     transition: all 0.4s ease;
     color: #fff;
     float: left;
-    
+
     &:after {
       left: 0;
       right: 0;
