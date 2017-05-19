@@ -34,7 +34,10 @@ export class Login extends Component {
           </form>
           <div className="button-bar">
             <button className="primary" type="button" onClick={this.handleCloseModal}>Enviar</button>
-            <a href={googleUrl} className="googleButton"><i className="fa fa-google-plus"></i>{' '} Inicia sesión</a>
+            <a href={googleUrl} className="googleButton">
+              <span className="googleButton-icon"></span>
+              <span className="googleButton-text">Inicia sesión</span>
+            </a>
           </div>
         </ModalBody>
       </Modal>
