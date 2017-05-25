@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
-<<<<<<< HEAD
 import {Link} from 'react-router';
-import {Header} from './header';
-=======
 import {Title} from './title';
->>>>>>> [comp] Adds payment component
 import {Development} from './development';
 import {Logos} from './logos';
 import ScrollReveal from 'scrollreveal';
