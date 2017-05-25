@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router';
 import {Header} from './header';
-import {Title} from './title';
 import {Development} from './development';
 import {Logos} from './logos';
 import {Footer} from './footer';
@@ -80,7 +80,7 @@ export class Main extends Component {
             <div className="prueba">
               <img src="assets/potencia.png" className="potencia-image" />
             </div>
-            <a className="btn-know" href="/video">Conoce nuestra plataforma</a>
+            <Link to="/video" className="btn-know">Conoce nuestra plataforma</Link>
           </div>
           <video id="video" className="video" onPause={this.handleOnEnded}>
           </video>
