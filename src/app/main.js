@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
+<<<<<<< HEAD
 import {Link} from 'react-router';
 import {Header} from './header';
+=======
+import {Title} from './title';
+>>>>>>> [comp] Adds payment component
 import {Development} from './development';
 import {Logos} from './logos';
-import {Footer} from './footer';
 import ScrollReveal from 'scrollreveal';
 import {SendMessage} from './modals/send-message';
 
@@ -71,7 +74,6 @@ export class Main extends Component {
   render() {
     return (
       <div>
-        <Header />
         <div className="background">
           <div className="arrow">
             <span className="scroll-inside"></span>
@@ -210,7 +212,6 @@ export class Main extends Component {
             </div>
           </div>
         </div>
-        <Footer />
         <SendMessage isOpen={this.state.modalIsOpen} handleClick={this.handleClick} />
       </div>
     );

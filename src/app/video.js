@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import  {Header} from './header';
 import {PotenciaVideo} from './potenciaVideo';
-import {Footer} from './footer';
 import {SendMessage} from './modals/send-message';
 
 export class Video extends Component {
@@ -13,9 +11,8 @@ export class Video extends Component {
   }
 
   render() {
-    return(
+    return (
       <div>
-        <Header />
         <div className="potencia-video background">
           <div className="video-style">
             <iframe src="https://player.vimeo.com/video/204449962" width="660" height="415" frameBorder="0" allowFullScreen></iframe>
@@ -28,7 +25,6 @@ export class Video extends Component {
           </div>
         </div>
         <SendMessage isOpen={this.state.modalOpen} handleClick={() => this.setState({modalOpen: false})} />
-        <Footer />
       </div>
     );
   }
