@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {SendMessage} from './modals/send-message';
 import {Login} from './modals/login';
+import {Link} from 'react-router';
 
 export class Header extends Component {
 
@@ -42,7 +43,7 @@ export class Header extends Component {
           <div className="container">
             <ul>
               <li>
-                <a href="https://potencia.mx/pagos" className="btn-payment">Realiza tu pago</a>
+                <Link to="/pagos" className="btn-payment">Realiza tu pago</Link>
               </li>
               <li><a target="_blank" href="https://web.facebook.com/potenciaeducativa/"><i className="fa fa-facebook"></i></a></li>
               <li><a target="_blank" href="https://twitter.com/potenciaedu"><i className="fa fa-twitter"></i></a></li>
