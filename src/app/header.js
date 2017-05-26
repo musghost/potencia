@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {SendMessage} from './modals/send-message';
 import {Login} from './modals/login';
+import {Link} from 'react-router';
 
 export class Header extends Component {
 
@@ -29,7 +30,7 @@ export class Header extends Component {
   }
 
   handleClick(event) {
-    if(typeof event !== 'undefined') {
+    if (typeof event !== 'undefined') {
       event.preventDefault();
     }
     this.setState({modalIsOpen: !this.state.modalIsOpen});
@@ -41,6 +42,9 @@ export class Header extends Component {
         <div className="submenu">
           <div className="container">
             <ul>
+              <li>
+                <Link to="/pagos" className="btn-payment">Realiza tu pago</Link>
+              </li>
               <li><a target="_blank" href="https://web.facebook.com/potenciaeducativa/"><i className="fa fa-facebook"></i></a></li>
               <li><a target="_blank" href="https://twitter.com/potenciaedu"><i className="fa fa-twitter"></i></a></li>
               <li><a href="#"><i className="fa fa-google-plus"></i></a></li>

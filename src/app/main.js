@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
-import {Header} from './header';
+import {Link} from 'react-router';
 import {Title} from './title';
 import {Development} from './development';
 import {Logos} from './logos';
-import {Footer} from './footer';
 import ScrollReveal from 'scrollreveal';
 import {SendMessage} from './modals/send-message';
 
@@ -71,7 +70,6 @@ export class Main extends Component {
   render() {
     return (
       <div>
-        <Header />
         <div className="background">
           <div className="arrow">
             <span className="scroll-inside"></span>
@@ -80,7 +78,7 @@ export class Main extends Component {
             <div className="prueba">
               <img src="assets/potencia.png" className="potencia-image" />
             </div>
-            <a className="btn-know" href="/video">Conoce nuestra plataforma</a>
+            <Link to="/video" className="btn-know">Conoce nuestra plataforma</Link>
           </div>
           <video id="video" className="video" onPause={this.handleOnEnded}>
           </video>
@@ -210,7 +208,6 @@ export class Main extends Component {
             </div>
           </div>
         </div>
-        <Footer />
         <SendMessage isOpen={this.state.modalIsOpen} handleClick={this.handleClick} />
       </div>
     );
