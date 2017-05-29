@@ -1269,8 +1269,34 @@ textarea {
   text-align: center;
 }
 
-.iframe-container {
-  padding-top: 167px;
-  background: black;
-  text-align: center;
+.main-nav {
+  background: #283593;
+  color: #fff;
+  overflow: hidden;
+  padding: 0 27px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.117647),0 1px 4px rgba(0,0,0,.117647);
+}
+
+.main-nav .logo {
+  padding: 0 50px 0 15px;
+}
+
+.main-nav .logo img {
+  max-width: 80px;
+  margin: 0;
+}
+
+.main-nav .nav-wrapper {
+  justify-content: space-between;
+}
+
+.main-nav .nav-buttons,.main-nav .nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.iframe-wrapper {
+  iframe {
+    width: 100%;
+  }
 }

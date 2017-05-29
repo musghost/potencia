@@ -20,8 +20,8 @@ ReactDOM.render(
     <Route path="/" component={App}>
       <IndexRoute component={Main}/>
       <Route path="video" component={Video}/>
-      <Route path="pagos" component={Payments}/>
     </Route>
+    <Route path="/pagos" component={Payments}/>
   </Router>,
   document.getElementById('root')
 );
