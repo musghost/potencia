@@ -49,6 +49,7 @@ export class Footer extends Component {
               <p>Para agendar una visita llamar a:</p>
               <p>+52 (55) 5361 9611 extensión: 8018</p>
               <p>+52 (55) 5362 3431 extensión: 8018</p>
+              <p>Servicio al cliente 01800-31-222-00</p>
             </div>
             <div></div>
             <div className="form-alone">

@@ -42,6 +42,7 @@ export class Header extends Component {
         <div className="submenu">
           <div className="container">
             <ul>
+              <li className="pull-left menu-phone">Servicio al cliente 01800-31-222-00</li>
               <li>
                 <Link to="/pagos" className="btn-payment">Realiza tu pago</Link>
               </li>
